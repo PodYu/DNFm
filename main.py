@@ -1,3 +1,3 @@
-import scrcpy_adb
-
+from ADB import scrcpy_adb
+import time
 print("scrcpy_adb")

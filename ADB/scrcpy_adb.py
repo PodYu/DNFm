@@ -20,11 +20,12 @@ def click(x, y):
     :param x: The x-coordinate of the click location.
     :param y: The y-coordinate of the click location.
     """
-    scrcpy.Client(device="192.168.8.4:5555").device.shell(f'input tap {x} {y}')
+    client.device.shell(f'input tap {x} {y}')
 
 # 如果你已经知道设备的序列号或 IP 地址
 client = scrcpy.Client(
-    device="192.168.8.4:5555",
+    #device="192.168.8.4:5555",#天选
+    device="192.168.3.103:5555",#sweet
     max_width=1000,
     bitrate=8000000,
     max_fps=30,
