@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d9f177a-6865-4b98-8d39-40451be8df60" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/DNFm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ADB/scrcpy_adb.py" afterDir="false" />
-    </list>
+    <list default="true" id="8d9f177a-6865-4b98-8d39-40451be8df60" name="更改" comment="```plaintextfeat(.idea): 新建PyCharm项目配置文件新建了一个PyCharm项目，包括主配置文件和ADB相关脚本。集成了Black代码格式化工具和Git版本控制。&#10;确保项目结构和命名符合最新规范。&#10;&#10;相关文件：&#10;- .idea/inspectionProfiles/profiles_settings.xml&#10;- .idea/misc.xml&#10;- .idea/modules.xml- .idea/vcs.xml&#10;- .idea/workspace.xml&#10;- ADB/scrcpy_adb.py&#10;```" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,6 +52,15 @@
       <option name="presentableId" value="Default" />
       <updated>1723773395880</updated>
     </task>
+    <task id="LOCAL-00001" summary="```plaintextfeat(.idea): 新建PyCharm项目配置文件新建了一个PyCharm项目，包括主配置文件和ADB相关脚本。集成了Black代码格式化工具和Git版本控制。&#10;确保项目结构和命名符合最新规范。&#10;&#10;相关文件：&#10;- .idea/inspectionProfiles/profiles_settings.xml&#10;- .idea/misc.xml&#10;- .idea/modules.xml- .idea/vcs.xml&#10;- .idea/workspace.xml&#10;- ADB/scrcpy_adb.py&#10;```">
+      <option name="closed" value="true" />
+      <created>1723795169900</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723795169900</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -72,5 +73,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="```plaintextfeat(.idea): 新建PyCharm项目配置文件新建了一个PyCharm项目，包括主配置文件和ADB相关脚本。集成了Black代码格式化工具和Git版本控制。&#10;确保项目结构和命名符合最新规范。&#10;&#10;相关文件：&#10;- .idea/inspectionProfiles/profiles_settings.xml&#10;- .idea/misc.xml&#10;- .idea/modules.xml- .idea/vcs.xml&#10;- .idea/workspace.xml&#10;- ADB/scrcpy_adb.py&#10;```" />
+    <option name="LAST_COMMIT_MESSAGE" value="```plaintextfeat(.idea): 新建PyCharm项目配置文件新建了一个PyCharm项目，包括主配置文件和ADB相关脚本。集成了Black代码格式化工具和Git版本控制。&#10;确保项目结构和命名符合最新规范。&#10;&#10;相关文件：&#10;- .idea/inspectionProfiles/profiles_settings.xml&#10;- .idea/misc.xml&#10;- .idea/modules.xml- .idea/vcs.xml&#10;- .idea/workspace.xml&#10;- ADB/scrcpy_adb.py&#10;```" />
   </component>
 </project>
