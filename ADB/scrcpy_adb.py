@@ -22,10 +22,24 @@ def click(x, y):
     """
     client.device.shell(f'input tap {x} {y}')
 
+
+def drag(start_x, start_y, end_x, end_y, duration=500):
+    """
+    Drags from the start coordinates to the end coordinates on the screen.
+
+    :param start_x: The x-coordinate of the start location.
+    :param start_y: The y-coordinate of the start location.
+    :param end_x: The x-coordinate of the end location.
+    :param end_y: The y-coordinate of the end location.
+    :param duration: The duration of the drag in milliseconds (default is 500).
+    """
+    command = f'input swipe {start_x} {start_y} {end_x} {end_y} {duration}'
+    client.device.shell(command)
+
 # 如果你已经知道设备的序列号或 IP 地址
 client = scrcpy.Client(
     #device="192.168.8.4:5555",#天选
-    device="192.168.3.103:5555",#sweet
+    device="192.168.3.43:5555",#sweet
     max_width=1000,
     bitrate=8000000,
     max_fps=30,
