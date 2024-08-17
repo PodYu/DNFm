@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d9f177a-6865-4b98-8d39-40451be8df60" name="更改" comment="```plaintextfeat(.idea): 新建PyCharm项目配置文件新建了一个PyCharm项目，包括主配置文件和ADB相关脚本。集成了Black代码格式化工具和Git版本控制。&#10;确保项目结构和命名符合最新规范。&#10;&#10;相关文件：&#10;- .idea/inspectionProfiles/profiles_settings.xml&#10;- .idea/misc.xml&#10;- .idea/modules.xml- .idea/vcs.xml&#10;- .idea/workspace.xml&#10;- ADB/scrcpy_adb.py&#10;```">
-      <changelist_data name="PodYu" email="yuyangtju1123@gmail.com" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="8d9f177a-6865-4b98-8d39-40451be8df60" name="更改" comment="包含以下变更：&#10;- 新增`main.py`文件的引用。&#10;- 更新`ADB/scrcpy_adb.py`文件的引用，以反映设备IP地址和代码注释的变动。&#10;- 清理并标准化XML注释和格式。">
+      <change beforePath="$PROJECT_DIR$/.idea/DNFm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DNFm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ADB/scrcpy_adb.py" beforeDir="false" afterPath="$PROJECT_DIR$/ADB/scrcpy_adb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,24 +37,24 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "PodYu"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PodYu&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/PodYu/DNFm.git",
-    "accountId": "ad682254-7bea-482b-927b-6f0d689872c7"
+    "accountId": "b58b34b3-e615-498d-aa08-622c3d85fd77"
   }
 }]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2kijfhmBWOeMMK7aymIK9rKJZFm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -65,7 +66,8 @@
     "Python.main.executor": "Run",
     "Python.scrcpy_adb.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -81,6 +83,9 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\86139\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="8d9f177a-6865-4b98-8d39-40451be8df60" name="更改" comment="" />
@@ -105,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723795230200</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="包含以下变更：&#10;- 新增`main.py`文件的引用。&#10;- 更新`ADB/scrcpy_adb.py`文件的引用，以反映设备IP地址和代码注释的变动。&#10;- 清理并标准化XML注释和格式。">
+      <option name="closed" value="true" />
+      <created>1723821282190</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723821282190</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +134,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="```plaintextfeat(.idea): 新建PyCharm项目配置文件新建了一个PyCharm项目，包括主配置文件和ADB相关脚本。集成了Black代码格式化工具和Git版本控制。&#10;确保项目结构和命名符合最新规范。&#10;&#10;相关文件：&#10;- .idea/inspectionProfiles/profiles_settings.xml&#10;- .idea/misc.xml&#10;- .idea/modules.xml- .idea/vcs.xml&#10;- .idea/workspace.xml&#10;- ADB/scrcpy_adb.py&#10;```" />
-    <option name="LAST_COMMIT_MESSAGE" value="```plaintextfeat(.idea): 新建PyCharm项目配置文件新建了一个PyCharm项目，包括主配置文件和ADB相关脚本。集成了Black代码格式化工具和Git版本控制。&#10;确保项目结构和命名符合最新规范。&#10;&#10;相关文件：&#10;- .idea/inspectionProfiles/profiles_settings.xml&#10;- .idea/misc.xml&#10;- .idea/modules.xml- .idea/vcs.xml&#10;- .idea/workspace.xml&#10;- ADB/scrcpy_adb.py&#10;```" />
+    <MESSAGE value="包含以下变更：&#10;- 新增`main.py`文件的引用。&#10;- 更新`ADB/scrcpy_adb.py`文件的引用，以反映设备IP地址和代码注释的变动。&#10;- 清理并标准化XML注释和格式。" />
+    <option name="LAST_COMMIT_MESSAGE" value="包含以下变更：&#10;- 新增`main.py`文件的引用。&#10;- 更新`ADB/scrcpy_adb.py`文件的引用，以反映设备IP地址和代码注释的变动。&#10;- 清理并标准化XML注释和格式。" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ADB/scrcpy_adb.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
