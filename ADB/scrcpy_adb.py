@@ -1,6 +1,7 @@
 import scrcpy
 import cv2
 import time
+import random
 
 class ScreenController:
     def __init__(self, device_ip, max_width=1000, bitrate=8000000, max_fps=30, flip=False, block_frame=False, connection_timeout=3000):
@@ -50,30 +51,30 @@ class ScreenController:
         print("click_down")
         self.client.control.touch(x, y, action=scrcpy.ACTION_DOWN, touch_id=-1)
         print("click_down")
-        time.sleep(0.1)
+        time.sleep(random.uniform(0.15, 0.25) )
         self.client.control.touch(x, y, action=scrcpy.ACTION_UP, touch_id=-1)
         print("click_up")
 
-    def drag(self, start_x, start_y, end_x, end_y, duration=500):
+    def move_start(self, start_x, start_y):
         """
         Drags from the start coordinates to the end coordinates on the screen.
 
         :param start_x: The x-coordinate of the start location.
         :param start_y: The y-coordinate of the start location.
-        :param end_x: The x-coordinate of the end location.
-        :param end_y: The y-coordinate of the end location.
-        :param duration: The duration of the drag in milliseconds (default is 500).
         """
-        command = f'input swipe {start_x} {start_y} {end_x} {end_y} {duration}'
-        self.client.device.shell(command)
+        self.client.control.touch(x, y, action=scrcpy.ACTION_DOWN, touch_id=-1)
+        print("click_down")
+        time.sleep(random.uniform(0.15, 0.25))
+        self.client.control.touch(x, y, action=scrcpy.ACTION_UP, touch_id=-1)
+        print("click_up")
 
 # 使用示例
 if __name__ == "__main__":
     # 单位电脑连接oneplus
-    #controller = ScreenController(device_ip="192.168.8.4:5555")
+    controller = ScreenController(device_ip="192.168.8.4:5555")
     # 家里电脑连接mix2
-    controller = ScreenController(device_ip="192.168.3.43:5555")
+    #controller = ScreenController(device_ip="192.168.3.43:5555")
     # 示例：模拟点击屏幕
     time.sleep(2)
     print("click")
-    controller.click(540, 1080)  # 在 x=540, y=1080 的位置点击
+    controller.click(50, 100)  # 在 x=540, y=1080 的位置点击
