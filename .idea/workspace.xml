@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d9f177a-6865-4b98-8d39-40451be8df60" name="更改" comment="refactor(main.py): 更新scrcpy_adb模块导入路径&#10;&#10;更改main.py中scrcpy_adb模块的导入方式，从直接导入更改为从ADB包中导入。这解决了直接引用模块产生的依赖问题，提高了代码的可维护性。">
+      <change afterPath="$PROJECT_DIR$/YOLO/convert_coco_to_yolo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YOLO/yolo1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YOLO/yolo1.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/DNFm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DNFm.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024_8_18_10_36____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2024_8_18_10_36____.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADB/scrcpy_adb.py" beforeDir="false" afterPath="$PROJECT_DIR$/ADB/scrcpy_adb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +64,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.convert_coco_to_yolo.executor": "Run",
     "Python.main.executor": "Run",
     "Python.scrcpy_adb.executor": "Run",
     "Python.test.executor": "Run",
@@ -128,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723910540220</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactor(main.py): 更新scrcpy_adb模块导入路径&#10;&#10;更改main.py中scrcpy_adb模块的导入方式，从直接导入更改为从ADB包中导入。这解决了直接引用模块产生的依赖问题，提高了代码的可维护性。">
+      <option name="closed" value="true" />
+      <created>1724058929510</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724058929510</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
