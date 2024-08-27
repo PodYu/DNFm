@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import cv2
 
 # 加载图像
-image_path = "C:/Users/13920/Desktop/000000007281.jpg"
+image_path = "C:/Users/86139/Desktop/text1.jpeg"
 image = cv2.imread(image_path)
 
 # Load a model
@@ -12,7 +12,7 @@ model = YOLO("yolov8n.pt")  # load a pretrained model (recommended for training)
 # Use the model
 #model.train(data="coco8.yaml", epochs=3)  # train the model
 #metrics = model.val()  # evaluate model performance on the validation set
-results = model("C:/Users/13920/Desktop/000000007281.jpg")  # predict on an image
+results = model(image_path, verbose=False)  # predict on an image
 #path = model.export(format="onnx")  # export the model to ONNX format
 
 # 绘制预测结果
