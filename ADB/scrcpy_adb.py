@@ -71,9 +71,9 @@ class ScreenController:
 # 使用示例
 if __name__ == "__main__":
     # 单位电脑连接oneplus
-    #controller = ScreenController(device_ip="192.168.8.4:5555")
+    controller = ScreenController(device_ip="192.168.8.4:5555")
     # 家里电脑连接mix2
-    controller = ScreenController(device_ip="192.168.3.43:5555")
+    #controller = ScreenController(device_ip="192.168.3.43:5555")
     # 示例：模拟点击屏幕
     time.sleep(2)
     print("click")
