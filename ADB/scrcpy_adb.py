@@ -77,4 +77,4 @@ if __name__ == "__main__":
     # 示例：模拟点击屏幕
     time.sleep(2)
     print("click")
-    controller.click(50, 100)  # 在 x=540, y=1080 的位置点击
+    #controller.click(50, 100)  # 在 x=540, y=1080 的位置点击

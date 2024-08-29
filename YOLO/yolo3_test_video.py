@@ -1,17 +1,18 @@
 from ultralytics import YOLO
 import cv2
 
-# 加载模型
-model = YOLO("yolov8n.pt")  # load a pretrained model
+def detect_objects_in_frame(frame):
+    """
+    使用YOLOv8模型对单个视频帧进行目标检测，并返回带有标注的帧。
 
-# 打开视频文件或摄像头
-video_path = "C:/Users/86139/Desktop/20240403 威海/无人机/DJI_0196.MP4"  # 或者使用 0 代表默认摄像头
-cap = cv2.VideoCapture(video_path)
+    参数:
+    frame (numpy.ndarray): 输入的视频帧。
 
-while cap.isOpened():
-    success, frame = cap.read()
-    if not success:
-        break
+    返回:
+    numpy.ndarray: 处理后的带有标注的视频帧。
+    """
+    # 加载模型
+    model = YOLO("yolov8n.pt")  # load a pretrained model
 
     # 使用模型进行预测
     results = model(frame, verbose=False)
@@ -38,13 +39,29 @@ while cap.isOpened():
             cv2.rectangle(frame, (x1, y1), c2, [0, 0, 255], -1, cv2.LINE_AA)  # filled
             cv2.putText(frame, label, (x1, y1 - 2), 0, 1, [225, 255, 255], thickness=2, lineType=cv2.LINE_AA)
 
-    # 显示图像
-    cv2.imshow('Prediction', frame)
+    return frame
 
-    # 按 'q' 键退出循环
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
+# 示例调用
+if __name__ == "__main__":
+    # 打开视频文件或摄像头
+    video_path = "C:/Users/86139/Desktop/20240403 威海/无人机/DJI_0196.MP4"
+    cap = cv2.VideoCapture(video_path)
 
-# 释放资源并关闭窗口
-cap.release()
-cv2.destroyAllWindows()
+    while cap.isOpened():
+        success, frame = cap.read()
+        if not success:
+            break
+
+        # 对每个帧进行目标检测
+        annotated_frame = detect_objects_in_frame(frame)
+
+        # 显示图像
+        cv2.imshow('Prediction', annotated_frame)
+
+        # 按 'q' 键退出循环
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+
+    # 释放资源并关闭窗口
+    cap.release()
+    cv2.destroyAllWindows()

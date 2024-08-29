@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d9f177a-6865-4b98-8d39-40451be8df60" name="更改" comment="refactor(main.py): 更新scrcpy_adb模块导入路径&#10;&#10;更改main.py中scrcpy_adb模块的导入方式，从直接导入更改为从ADB包中导入。这解决了直接引用模块产生的依赖问题，提高了代码的可维护性。">
-      <change beforePath="$PROJECT_DIR$/.idea/DNFm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DNFm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8d9f177a-6865-4b98-8d39-40451be8df60" name="更改" comment="未更新">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADB/scrcpy_adb.py" beforeDir="false" afterPath="$PROJECT_DIR$/ADB/scrcpy_adb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLO/yolo3_test_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/YOLO/yolo3_test_video.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,12 +41,12 @@
     &quot;assignee&quot;: &quot;PodYu&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/PodYu/DNFm.git",
-    "accountId": "ad682254-7bea-482b-927b-6f0d689872c7"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PodYu/DNFm.git&quot;,
+    &quot;accountId&quot;: &quot;ad682254-7bea-482b-927b-6f0d689872c7&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -147,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724409053407</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="未更新">
+      <option name="closed" value="true" />
+      <created>1724839501006</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724839501006</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +171,7 @@
     <MESSAGE value="```plaintextfeat(.idea): 新建PyCharm项目配置文件新建了一个PyCharm项目，包括主配置文件和ADB相关脚本。集成了Black代码格式化工具和Git版本控制。&#10;确保项目结构和命名符合最新规范。&#10;&#10;相关文件：&#10;- .idea/inspectionProfiles/profiles_settings.xml&#10;- .idea/misc.xml&#10;- .idea/modules.xml- .idea/vcs.xml&#10;- .idea/workspace.xml&#10;- ADB/scrcpy_adb.py&#10;```" />
     <MESSAGE value="包含以下变更：&#10;- 新增`main.py`文件的引用。&#10;- 更新`ADB/scrcpy_adb.py`文件的引用，以反映设备IP地址和代码注释的变动。&#10;- 清理并标准化XML注释和格式。" />
     <MESSAGE value="refactor(main.py): 更新scrcpy_adb模块导入路径&#10;&#10;更改main.py中scrcpy_adb模块的导入方式，从直接导入更改为从ADB包中导入。这解决了直接引用模块产生的依赖问题，提高了代码的可维护性。" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor(main.py): 更新scrcpy_adb模块导入路径&#10;&#10;更改main.py中scrcpy_adb模块的导入方式，从直接导入更改为从ADB包中导入。这解决了直接引用模块产生的依赖问题，提高了代码的可维护性。" />
+    <MESSAGE value="未更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="未更新" />
   </component>
 </project>
