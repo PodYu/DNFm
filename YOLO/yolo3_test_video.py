@@ -1,6 +1,10 @@
 from ultralytics import YOLO
 import cv2
 
+# 加载模型
+model = YOLO("yolov8n.pt")  # load a pretrained model
+
+
 def detect_objects_in_frame(frame):
     """
     使用YOLOv8模型对单个视频帧进行目标检测，并返回带有标注的帧。
@@ -11,8 +15,7 @@ def detect_objects_in_frame(frame):
     返回:
     numpy.ndarray: 处理后的带有标注的视频帧。
     """
-    # 加载模型
-    model = YOLO("yolov8n.pt")  # load a pretrained model
+
 
     # 使用模型进行预测
     results = model(frame, verbose=False)
