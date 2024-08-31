@@ -30,10 +30,10 @@ class ScreenController:
             block_frame=block_frame,
             connection_timeout=connection_timeout
         )
-        self.client.add_listener(scrcpy.EVENT_FRAME, self.lis_frame)
+        self.client.add_listener(scrcpy.EVENT_FRAME, self.listener_frame)
         self.client.start(threaded=True)
 
-    def lis_frame(self, frame):
+    def listener_frame(self, frame):
         return frame
 
     def handle_frame(self, frame):
@@ -105,11 +105,11 @@ class ScreenController:
 # 使用示例
 if __name__ == "__main__":
     # 单位电脑连接oneplus
-    #controller = ScreenController(device_ip="192.168.8.4:5555")
+    controller = ScreenController(device_ip="192.168.8.4:5555")
     # 家里电脑连接mix2
     #controller = ScreenController(device_ip="192.168.3.43:5555")
     # 家里电脑连接1+
-    controller = ScreenController(device_ip="192.168.3.103:5555")
+    #controller = ScreenController(device_ip="192.168.3.103:5555")
     # 示例：模拟点击屏幕
     time.sleep(2)
     print("click")
