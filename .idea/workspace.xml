@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d9f177a-6865-4b98-8d39-40451be8df60" name="更改" comment="未更新">
-      <change beforePath="$PROJECT_DIR$/.idea/DNFm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DNFm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YOLO/testCUDA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YOLO/video2img.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mainv1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADB/scrcpy_adb.py" beforeDir="false" afterPath="$PROJECT_DIR$/ADB/scrcpy_adb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADB/scrcpy_adb_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/ADB/scrcpy_adb_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +45,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/PodYu/DNFm.git&quot;,
-    &quot;accountId&quot;: &quot;ad682254-7bea-482b-927b-6f0d689872c7&quot;
+    &quot;accountId&quot;: &quot;b58b34b3-e615-498d-aa08-622c3d85fd77&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -82,6 +80,7 @@
       <recent name="C:\Users\86139\PycharmProjects\DNFm\ADB" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\86139\PycharmProjects\DNFm\YOLO" />
       <recent name="C:\Users\13920\PycharmProjects\DNFm" />
     </key>
   </component>
