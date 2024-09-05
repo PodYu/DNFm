@@ -5,10 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d9f177a-6865-4b98-8d39-40451be8df60" name="更改" comment="未更新">
-      <change afterPath="$PROJECT_DIR$/YOLO/testCUDA.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YOLO/video2img.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mainv1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GAME/game_action.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GAME/game_action_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GAME/game_action_v2_bak.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GAME/game_action_v3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GAME/game_action_v4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GAME/game_action_v5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GAME/game_action_v6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GAME/game_action_v7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GAME/game_command.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GAME/game_control.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GAME/label.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GAME/role.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GAME/screen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GAME/skill.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ADB/scrcpy_adb_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/ADB/scrcpy_adb_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +93,7 @@
       <recent name="C:\Users\86139\PycharmProjects\DNFm\ADB" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\86139\PycharmProjects\DNFm\GAME" />
       <recent name="C:\Users\86139\PycharmProjects\DNFm\YOLO" />
       <recent name="C:\Users\13920\PycharmProjects\DNFm" />
     </key>
@@ -159,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724839501006</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="未更新">
+      <option name="closed" value="true" />
+      <created>1725464677423</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725464677423</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
