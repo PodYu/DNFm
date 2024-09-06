@@ -1,10 +1,10 @@
 from ADB import scrcpy_adb_1
+from YOLO import yolo3_test_video
 import time
-from ultralytics import YOLO
 import cv2
 import queue
-import threading
 import traceback
+
 
 
 # 定义一个自动清理队列的类，继承自queue.Queue
@@ -15,38 +15,6 @@ class AutoCleaningQueue(queue.Queue):
             self.get()  # 自动丢弃最旧的元素
         super().put(item, block, timeout)
 
-
-# 定义一个处理YOLO模型推理的类
-class ProcessYolo():
-    def __init__(self, image_queue, infer_queue, show_queue):
-        """
-        初始化ProcessYolo类。
-
-        参数:
-        - image_queue: 图像队列，用于存储待处理的图像
-        - infer_queue: 推理结果队列，用于存储模型推理的结果
-        - show_queue: 显示队列，用于存储需要显示的图像
-        """
-        self.image_queue = image_queue
-        self.infer_queue = infer_queue
-        self.show_queue = show_queue
-        self.yolo = YOLO("yolov8n.pt")
-        self.thread = threading.Thread(target=self.handle)  # 创建线程，并指定目标函数
-        self.thread.start()
-
-    def handle(self):
-        """
-        处理队列中的图像，使用YOLO模型进行推理。
-        """
-        while True:
-            if self.image_queue.empty():
-                time.sleep(0.005)
-                continue
-            result = self.yolo.predict(source=self.image_queue.get(), verbose=False)
-            if result is None:
-                continue
-            self.infer_queue.put(result)
-            self.show_queue.put(result[0].plot())
 
 
 # 显示推理结果的函数
@@ -80,12 +48,14 @@ if __name__ == '__main__':
     # controller1 = scrcpy_adb.ScreenController(device_ip="192.168.3.43:5555")#MIX
     controller1 = scrcpy_adb_1.ScreenController(image_queue, device_ip="192.168.8.4:5555")  # ONE+
     # controller1 = scrcpy_adb_1.ScreenController(device_ip="192.168.3.103:5555")  #ONE+home
-    yolo = ProcessYolo(image_queue, infer_queue, show_queue)
+    yolo = yolo3_test_video.ProcessYolo(image_queue, infer_queue, show_queue)
 
+    '''
     # 初始化游戏控制和屏幕处理对象
     control = GameControl(client)
     screen = Screen(image_queue, control)
     action = GameAction(control, infer_queue, screen)
+    '''
     print("初始化完成，开始处理 主线程")
 
     # 主循环
@@ -93,10 +63,11 @@ if __name__ == '__main__':
         if show_queue.empty():
             time.sleep(0.01)
             continue
-        image = show_queue.get()
-        image_w = 1200
-        image = cv2.resize(image, (image_w, int(image.shape[0] * image_w / image.shape[1])))
+        image = infer_queue.get()
+        #image_w = 1200
+        #image = cv2.resize(image, (image_w, int(image.shape[0] * image_w / image.shape[1])))
 
+        '''
         # 创建按钮区域并绘制按钮
         button_panel_width = 100
         button_panel = np.zeros((image.shape[0], button_panel_width, 3), dtype=np.uint8)
@@ -146,15 +117,30 @@ if __name__ == '__main__':
             elif button_index == 7:
                 action.param = GameParamVO()
                 action.start_bwj()
-
+     
         def update_display():
-            combined = np.hstack((image, button_panel))
-            cv2.imshow("Image", combined)
+            #combined = np.hstack((image, button_panel))
+            #cv2.imshow("Image", combined)
+        '''
 
-        draw_buttons(button_panel)
-        cv2.namedWindow("Image")
-        cv2.setMouseCallback("Image", on_mouse)
-        update_display()
-        cv2.waitKey(1)
+
+        #draw_buttons(button_panel)
+        #cv2.namedWindow("Image")
+        #cv2.setMouseCallback("Image", on_mouse)
+        #update_display()
+        try:
+            # 处理图像
+            image = yolo3_test_video.show_objects_in_frame(image)
+
+            # 显示预测结果
+            cv2.imshow("Prediction", image)
+
+            # 等待键盘事件
+            cv2.waitKey(1)
+        except Exception as e:
+            print(f"发生错误：{e}")
+
+        # 释放资源
+        cv2.destroyAllWindows()
 
 

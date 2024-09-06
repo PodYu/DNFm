@@ -2,10 +2,6 @@ import scrcpy
 import cv2
 import time
 import random
-from ultralytics import YOLO
-
-# Load a model
-model = YOLO("yolov8n.pt")  # load a pretrained model (recommended for training)
 
 
 class ScreenController:
