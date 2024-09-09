@@ -5,7 +5,7 @@ import random
 
 
 class ScreenController:
-    def __init__(self, image_queue,device_ip, max_width=1000, bitrate=8000000, max_fps=30, flip=False, block_frame=False, connection_timeout=3000):
+    def __init__(self, image_queue, device_ip, max_width=1000, bitrate=8000000, max_fps=30, flip=False, block_frame=False, connection_timeout=3000):
         """
         Initializes the ScreenController with the given parameters.
 

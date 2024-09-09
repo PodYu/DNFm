@@ -1,5 +1,5 @@
 from ADB import scrcpy_adb_1
-from YOLO import yolo3_test_video
+from YOLO import yolo_predict
 import time
 import cv2
 import queue
@@ -42,13 +42,13 @@ def show_result(screen):
 # 主程序入口
 if __name__ == '__main__':
     # 初始化各种队列
-    image_queue = AutoCleaningQueue(maxsize=3)
-    infer_queue = AutoCleaningQueue(maxsize=3)
-    show_queue = AutoCleaningQueue(maxsize=3)
+    image_queue = AutoCleaningQueue(maxsize=2)
+    infer_queue = AutoCleaningQueue(maxsize=2)
+    show_queue = AutoCleaningQueue(maxsize=2)
     # controller1 = scrcpy_adb.ScreenController(device_ip="192.168.3.43:5555")#MIX
-    controller1 = scrcpy_adb_1.ScreenController(image_queue, device_ip="192.168.8.4:5555")  # ONE+
-    # controller1 = scrcpy_adb_1.ScreenController(device_ip="192.168.3.103:5555")  #ONE+home
-    yolo = yolo3_test_video.ProcessYolo(image_queue, infer_queue, show_queue)
+    # controller1 = scrcpy_adb_1.ScreenController(image_queue, device_ip="192.168.8.4:5555")  # ONE+
+    controller1 = scrcpy_adb_1.ScreenController(image_queue, device_ip="192.168.3.103:5555")  #ONE+home
+    yolo = yolo_predict.ProcessYolo(image_queue, infer_queue, show_queue)
 
     '''
     # 初始化游戏控制和屏幕处理对象
@@ -63,7 +63,7 @@ if __name__ == '__main__':
         if show_queue.empty():
             time.sleep(0.01)
             continue
-        image = infer_queue.get()
+        image = show_queue.get()
         #image_w = 1200
         #image = cv2.resize(image, (image_w, int(image.shape[0] * image_w / image.shape[1])))
 
@@ -129,8 +129,6 @@ if __name__ == '__main__':
         #cv2.setMouseCallback("Image", on_mouse)
         #update_display()
         try:
-            # 处理图像
-            image = yolo3_test_video.show_objects_in_frame(image)
 
             # 显示预测结果
             cv2.imshow("Prediction", image)
@@ -140,7 +138,7 @@ if __name__ == '__main__':
         except Exception as e:
             print(f"发生错误：{e}")
 
-        # 释放资源
-        cv2.destroyAllWindows()
+    # 释放资源
+    cv2.destroyAllWindows()
 
 
